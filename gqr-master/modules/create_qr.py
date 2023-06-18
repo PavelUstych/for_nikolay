@@ -30,19 +30,21 @@ box = tk.Listbox(
 )
 box.place(x=10,y=10)
 list_history = []
+
 def history():
     select_index = box.curselection()
     if select_index:
         select_item = list_history[select_index[0]]
-        image_path = ctk.CTkImage(dark_image=PIL.Image.open(select_item), size=(200,200))
-        qr_label = ctk.CTkLabel(m_app.screen, image=image_path, text="")
-        qr_label.place(x = 380, y = 80)
+        image_path = ctk.CTkImage(dark_image=PIL.Image.open(select_item), size=(250,250))
+        qr_label = ctk.CTkLabel(m_frame.frame_1, image=image_path, text="")
+        qr_label.place(x = 220, y = 14)
     else:
         print("Тут нечого немає")
-        
+
+#       qr_label.place(x = 420, y = 120)
         
 
-    
+
     
 
 bg_color = "white"
@@ -136,9 +138,6 @@ def bg():
     qr.add_data(m_entry.text.get())
     qr.make(fit=True)
     
-    
-    
-
 
 
    
@@ -162,9 +161,9 @@ def bg():
     file_path1 = os.path.splitext(os.path.basename(qr_path))[0]
     list_history.append(qr_path)
     
-    image_path = ctk.CTkImage(dark_image=PIL.Image.open(f'C:/Users/Дом/Desktop/{email}/{count}.png'), size=(200,200))
-    qr_label = ctk.CTkLabel(m_app.screen, image=image_path, text="")
-    qr_label.place(x = 380, y = 80)
+    image_path = ctk.CTkImage(dark_image=PIL.Image.open(f'C:/Users/Дом/Desktop/{email}/{count}.png'), size=(235,235))
+    qr_label = ctk.CTkLabel(m_frame.frame_main, image=image_path, text="")
+    qr_label.place(x = 420, y = 120)
     
     box.insert(END, file_path1)
 
@@ -257,9 +256,9 @@ def add_logo():
     # qr_logo =  PIL.Image.alpha_composite(qr_image.convert("RGBA"), result_image)
     # qr_logo.save(path_search(f'C:/Users/Дом/Desktop/{email}/{count}.{qrsave}'))
     
-    image_path = ctk.CTkImage(dark_image=PIL.Image.open(f'C:/Users/Дом/Desktop/{email}/{count}.png'), size=(200,200))
-    qr_label = ctk.CTkLabel(m_app.screen, image=image_path, text="")
-    qr_label.place(x = 380, y = 80)
+    image_path = ctk.CTkImage(dark_image=PIL.Image.open(f'C:/Users/Дом/Desktop/{email}/{count}.png'), size=(235,235))
+    qr_label = ctk.CTkLabel(m_frame.frame_main, image=image_path, text="")
+    qr_label.place(x = 420, y = 120)
 
 
 
@@ -342,9 +341,9 @@ def style_qrc_code():
                  print("Новый yt ujl!")
     image = image.resize((200, 200))
     image.save(f'C:/Users/Дом/Desktop/{email}/{count}.png')
-    image_path = ctk.CTkImage(dark_image=PIL.Image.open(f'C:/Users/Дом/Desktop/{email}/{count}.png'), size=(200,200))
-    qr_label = ctk.CTkLabel(m_app.screen, image=image_path, text="")
-    qr_label.place(x = 380, y = 80)
+    image_path = ctk.CTkImage(dark_image=PIL.Image.open(f'C:/Users/Дом/Desktop/{email}/{count}.png'), size=(235,235))
+    qr_label = ctk.CTkLabel(m_frame.frame_main, image=image_path, text="")
+    qr_label.place(x = 420, y = 120)
     
     
 
@@ -384,8 +383,8 @@ def style_qrt_code():
                  print("Новый yt ujl!")
     image = image.resize((200, 200))
     image.save(f'C:/Users/Дом/Desktop/{email}/{count}.png')
-    image_path = ctk.CTkImage(dark_image=PIL.Image.open(f'C:/Users/Дом/Desktop/{email}/{count}.png'), size=(200,200))
-    qr_label = ctk.CTkLabel(m_app.screen, image=image_path, text="")
-    qr_label.place(x = 380, y = 80)
+    image_path = ctk.CTkImage(dark_image=PIL.Image.open(f'C:/Users/Дом/Desktop/{email}/{count}.png'), size=(235,235))
+    qr_label = ctk.CTkLabel(m_frame.frame_main, image=image_path, text="")
+    qr_label.place(x = 420, y = 120)
     
     

@@ -20,9 +20,7 @@ url_code = ctk.CTkButton(master=m_frame.frame_main,
                          text_color="black",
                          hover_color= '#c0dfc2'
                          )
-
 # url_code.place(x=430,y=25, anchor = ctk.CENTER)
-
 
 logo_button = ctk.CTkButton(master=m_frame.frame_main,
                          width=360,
@@ -35,10 +33,7 @@ logo_button = ctk.CTkButton(master=m_frame.frame_main,
                          text_color="black",
                          hover_color= '#c0dfc2'
                          )
-
 # logo_button.place(x=10,y=170)
-
-# 
 
 autorisation_button = ctk.CTkButton(master=m_frame.frame2,
                          width=110,
@@ -51,10 +46,7 @@ autorisation_button = ctk.CTkButton(master=m_frame.frame2,
                          text_color="black",
                          hover_color= '#c0dfc2'
                          )
-
 autorisation_button.place(x=10,y=35)
-
-# 
 
 come_button = ctk.CTkButton(master=m_frame.frame2,
                          width=110,
@@ -67,10 +59,7 @@ come_button = ctk.CTkButton(master=m_frame.frame2,
                          text_color="black",
                          hover_color= '#c0dfc2'
                          )
-
 come_button.place(x=140,y=35)
-
-# 
 
 register_button = ctk.CTkButton(master=m_frame.frame_register,
                          width=110,
@@ -82,7 +71,6 @@ register_button = ctk.CTkButton(master=m_frame.frame_register,
                          text_color="black",
                          hover_color= '#c0dfc2'
                          )
-
 register_button.place(x=100,y=310)
 
 come_button_2 = ctk.CTkButton(master=m_frame.frame_come,
@@ -95,17 +83,7 @@ come_button_2 = ctk.CTkButton(master=m_frame.frame_come,
                          text_color="black",
                          hover_color= '#c0dfc2'
                          )
-
 come_button_2.place(x=95,y=180)
-
-
-
-
-
-
-
-
-
 
 bg_color_button = ctk.CTkButton(master=m_frame.frame_main,
                          width=360,
@@ -117,7 +95,6 @@ bg_color_button = ctk.CTkButton(master=m_frame.frame_main,
                          text_color="black",
                          hover_color= '#c0dfc2'
                          )
-
 # bg_color_button.place(x=95,y=180)
 
 fg_color_button = ctk.CTkButton(master=m_frame.frame_main,
@@ -130,7 +107,6 @@ fg_color_button = ctk.CTkButton(master=m_frame.frame_main,
                          text_color="black",
                          hover_color= '#c0dfc2'
                          )
-
 # fg_color_button.place(x=95,y=180)
 
 profile_button = ctk.CTkButton(master=m_frame.frame_main,
@@ -157,7 +133,6 @@ bye_profile_button = ctk.CTkButton(master=m_frame.frame_1,
                          fg_color="#64ac8f",
                         bg_color='#94d6ba'
                          )
-
 bye_profile_button.place(x=580,y=10)
 
 select_button = ctk.CTkButton(master=m_frame.frame_1,
@@ -172,16 +147,6 @@ select_button = ctk.CTkButton(master=m_frame.frame_1,
                         bg_color='#94d6ba'
                          )
 select_button.place(x=10,y=280)
-
-
-
-
-
-
-
-
-
-
 
 png_button = ctk.CTkButton(master=m_frame.frame_main,
                         width=100,
@@ -222,7 +187,6 @@ svg_button = ctk.CTkButton(master=m_frame.frame_main,
                          )
 # svg_button.place(x=265,y=260)
 
-
 style_qrc_button = ctk.CTkButton(master=m_frame.frame_main,
                         width=170,
                         height=30,
@@ -235,7 +199,6 @@ style_qrc_button = ctk.CTkButton(master=m_frame.frame_main,
                         bg_color="#4b6154"
                          )
 style_qrc_button.place(x=10,y=300)
-
 #  ▲
 
 font2 = ctk.CTkFont(family="Papyrus",
@@ -255,5 +218,3 @@ style_qrt_button = ctk.CTkButton(master=m_frame.frame_main,
                         bg_color="#4b6154"
                          )
 style_qrt_button.place(x=200,y=300)
-
-

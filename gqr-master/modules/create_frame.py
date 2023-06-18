@@ -36,7 +36,6 @@ frame_come = ctk.CTkFrame(master = m_app.screen,
                      )
 # frame_come.place(x=230,y=130)
 
-
 frame_1 = ctk.CTkFrame(master = m_app.screen,
                      width=700,
                      height=380,
@@ -44,11 +43,9 @@ frame_1 = ctk.CTkFrame(master = m_app.screen,
                      bg_color='#4b6154'
                      )
 
-
 frame_main = ctk.CTkFrame(master = m_app.screen,
                      width=700,
                      height=380,
                      fg_color="#4b6154",
                      bg_color='#4b6154'
                      )
-
